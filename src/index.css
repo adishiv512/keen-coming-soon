@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 212 100% 39%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,22 +34,6 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -79,14 +64,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -97,5 +74,58 @@
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .keen-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .keen-card {
+    @apply rounded-xl bg-white p-6 shadow-md border border-keen-gray;
+  }
+
+  .keen-heading {
+    @apply text-keen-dark font-bold;
+  }
+
+  .keen-button-primary {
+    @apply bg-keen-dark text-white hover:bg-keen-medium px-4 py-2 rounded-md transition-colors;
+  }
+
+  .keen-button-secondary {
+    @apply bg-white text-keen-dark border border-keen-dark hover:bg-keen-gray px-4 py-2 rounded-md transition-colors;
+  }
+
+  .keen-input {
+    @apply border border-keen-gray rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-keen-light;
+  }
+
+  .avatar-container {
+    @apply relative bg-gradient-to-b from-keen-medium to-keen-dark rounded-full p-1;
+  }
+
+  .avatar-pulse {
+    @apply absolute inset-0 bg-keen-accent/20 rounded-full animate-pulse;
+  }
+  
+  .animated-gradient {
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s ease infinite;
+    background-image: linear-gradient(45deg, #0A2342, #2663A3, #4F94CD, #2663A3, #0A2342);
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
