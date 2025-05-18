@@ -1,7 +1,7 @@
 
 import React from 'react';
 import FeatureCard from './FeatureCard';
-import { BookOpen, MessageCircle, Users, Graduation } from 'lucide-react';
+import { BookOpen, MessageCircle, Users, GraduationCap } from 'lucide-react';
 
 const Features: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const Features: React.FC = () => {
           />
           
           <FeatureCard
-            icon={<Graduation className="h-6 w-6" />}
+            icon={<GraduationCap className="h-6 w-6" />}
             title="Custom AI Avatars"
             description="Teachers can create personalized AI avatars that match their teaching style."
           />
