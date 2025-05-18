@@ -5,14 +5,14 @@ import { BookOpen, MessageCircle, Users, GraduationCap } from 'lucide-react';
 
 const Features: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-keen-black">
       <div className="keen-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold keen-heading mb-4">
-            Designed for modern learning
+            Modern learning
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Keen combines AI technology with personalized education to create a learning experience that adapts to each student's needs.
+          <p className="text-lg text-gray-400 max-w-lg mx-auto">
+            AI technology with personalized education.
           </p>
         </div>
         
@@ -20,25 +20,25 @@ const Features: React.FC = () => {
           <FeatureCard
             icon={<BookOpen className="h-6 w-6" />}
             title="AI Tutoring"
-            description="Get instant help from AI tutors that can explain concepts, solve problems, and answer questions."
+            description="Instant help from AI tutors."
           />
           
           <FeatureCard
             icon={<MessageCircle className="h-6 w-6" />}
             title="Live Chat"
-            description="Connect with your teachers and AI tutors through voice or text chat for immediate support."
+            description="Connect with teachers and AI tutors."
           />
           
           <FeatureCard
             icon={<Users className="h-6 w-6" />}
             title="Virtual Classrooms"
-            description="Join interactive classes with your peers and receive personalized instruction."
+            description="Interactive classes with personalized instruction."
           />
           
           <FeatureCard
             icon={<GraduationCap className="h-6 w-6" />}
             title="Custom AI Avatars"
-            description="Teachers can create personalized AI avatars that match their teaching style."
+            description="Create personalized AI avatars."
           />
         </div>
       </div>

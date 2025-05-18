@@ -54,13 +54,13 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				keen: {
-					dark: '#0A2342', // dark blue
-					medium: '#2663A3', // medium blue
-					light: '#4F94CD', // light blue
-					accent: '#6ABAF7', // accent blue
-					black: '#0F0F0F', // near black
-					white: '#FFFFFF', // white
-					gray: '#E5E5E5', // light gray
+					dark: '#1A1F2C', // dark blue accent
+					medium: '#2663A3', // medium blue (will use sparingly)
+					light: '#4F94CD', // light blue (will use sparingly)
+					accent: '#0EA5E9', // accent blue
+					black: '#000000', // black for background
+					white: '#FFFFFF', // white for text
+					gray: '#333333', // dark gray
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
