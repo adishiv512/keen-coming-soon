@@ -87,8 +87,32 @@
 }
 
 @layer utilities {
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animation-delay-1500 {
+    animation-delay: 1.5s;
+  }
+  
   .animation-delay-2000 {
     animation-delay: 2s;
+  }
+  
+  .animation-delay-2500 {
+    animation-delay: 2.5s;
   }
   
   .animation-delay-4000 {
@@ -97,6 +121,14 @@
   
   .animate-blob {
     animation: blob 7s infinite;
+  }
+  
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+  
+  .animate-bounce-subtle {
+    animation: bounce-subtle 3s ease-in-out infinite;
   }
   
   @keyframes blob {
@@ -111,6 +143,15 @@
     }
     100% {
       transform: translate(0px, 0px) scale(1);
+    }
+  }
+  
+  @keyframes bounce-subtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
     }
   }
 }
