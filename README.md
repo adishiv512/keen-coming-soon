@@ -2,5 +2,4 @@
 Built by Shiv Garg
 
 Run locally:
-npm i
-npm run dev
+npm i && npm run dev
