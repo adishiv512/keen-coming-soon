@@ -18,9 +18,9 @@ const Index = () => {
         <section className="py-16 bg-black text-white">
           <div className="keen-container text-center">
             <div className="flex justify-center gap-4">
-              <Link to="/interest">
-                <Button className="bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-black font-semibold px-8 py-3">
-                  Express Your Interest
+              <Link to="/signup">
+                <Button className="bg-black border border-white/20 text-white hover:bg-white/10 px-8 py-2">
+                  Join
                 </Button>
               </Link>
             </div>
