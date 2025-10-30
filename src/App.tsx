@@ -50,6 +50,17 @@ const App = () => (
               <div className="w-2 h-2 bg-white/60 rounded-full animate-pulse animation-delay-200"></div>
               <div className="w-2 h-2 bg-white/40 rounded-full animate-pulse animation-delay-400"></div>
             </div>
+            
+            <div className="mt-8 animate-fade-in animation-delay-3000">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdoCt_iCOtX63XGFc1FhM8RnNUCrExpfPq4zctbNPQXHprO6g/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-3 text-sm font-medium bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-md hover:from-yellow-400 hover:to-amber-500 transition-all duration-300 shadow-lg hover:shadow-yellow-500/50"
+              >
+                Express Your Interest
+              </a>
+            </div>
           </div>
         </div>
       </div>
